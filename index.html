@@ -2,20 +2,41 @@
 <script href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"type="text/javascript"></script>
 <script href="main.js"type="text/javascript"></script>
 
+
+
+
+
 <body>
 
+<p>Click the button to get your coordinates.</p>
 
+<button onclick="getLocation()">Try It</button>
 
-<div class="container-fluid main">
-	
-	<button id="getLocation">Get Location</button>
+<p id="demo"></p>
 
+<script>
+var x = document.getElementById("demo");
 
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
 
-
-</div>
-
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;	
+}
+</script>
 
 </body>
 
+
+
+
+
+
 <script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+</html>
