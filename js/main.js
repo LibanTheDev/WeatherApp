@@ -21,7 +21,7 @@ $(document).ready(function() {
 
                 //Only display wind data if wind speed is greater than 1mph
                
-
+}
                 
 
                
