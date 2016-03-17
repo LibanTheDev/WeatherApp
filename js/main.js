@@ -19,6 +19,17 @@ $(document).ready(function() {
                 $('#condition').append(description +
                     '<br><canvas class="' + icon + '" width="50" height="50"></canvas>');
 
+
+            if(currentTemp<55) {
+                $('*').css('background', 'url('winter_city.jpg') no-repeat');
+            }
+            if(currentTemp>=55 && currentTemp<=80) {
+                 $('*').css('background', 'url('spring_norway.jpg') no-repeat');
+            }
+            if(currentTemp>80) {
+                 $('*').css('background', 'url('desert_namibia.jpg') no-repeat');
+            }
+
                 //Only display wind data if wind speed is greater than 1mph
                
 }
@@ -78,4 +89,7 @@ $(document).ready(function() {
 
     } //End checkGeoLocation
     checkGeoLocation();
+
+           
+
                         });
