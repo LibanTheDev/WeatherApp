@@ -28,7 +28,7 @@ $(document).ready(function() {
                 console.log(json);
                 var city = json.results[0].address_components[3].long_name;
                 var neighborhood = json.results[0].address_components[2].long_name;
-                var locationHTML = '<h1>' + city + '</h1><h3>' + neighborhood + '</h3>';
+                var locationHTML = '<h3>' + neighborhood + '</h3>';
                 $('#location').append(locationHTML);
             }
         })
