@@ -10,15 +10,35 @@ $(document).ready(function() {
                 //Current data
                 var currentTemp = Math.round(json.currently.apparentTemperature) + '\u00B0';
                 var description = json.currently.summary;
-                
+                var icon = json.currently.icon;
                 
                
 
                 //Append current data to document
                 $('#temp').append(currentTemp);
+                $('#condition').append(description +
+                    '<br><canvas class="' + icon + '" width="50" height="50"></canvas>');
+
+                //Only display wind data if wind speed is greater than 1mph
+               
+
                 
 
-                              
+               
+
+
+              
+
+
+
+           
+
+
+        }); //End .ajax()
+    } //End getWeatherData()
+    //---------------------------------------------------
+    //---------------------------------------------------
+
     //Find city function
     function getCity(lat, long) {
         $.ajax({
@@ -27,8 +47,8 @@ $(document).ready(function() {
             , success: function (json) {
                 console.log(json);
                 var city = json.results[0].address_components[2].long_name;
-                
-                var locationHTML = '<h1>' + city + '</h1>';
+                var  neighborhood = json.results[0].address_components[4].long_name;
+                var locationHTML = '<h1>' + city + '</h1><h3>' + neighborhood + '</h3>';
                 $('#location').append(locationHTML);
             }
         })
@@ -58,6 +78,4 @@ $(document).ready(function() {
 
     } //End checkGeoLocation
     checkGeoLocation();
-    //---------------------------------------------------
-    //---------------------------------------------------
                         });
