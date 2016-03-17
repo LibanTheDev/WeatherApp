@@ -10,20 +10,19 @@ $(document).ready(function() {
                 //Current data
                 var currentTemp = Math.round(json.currently.apparentTemperature) + '\u00B0';
                 var description = json.currently.summary;
-                var icon = json.currently.icon;
+                
                 
                
 
                 //Append current data to document
                 $('#temp').append(currentTemp);
-                $('#condition').append(description +
-                    '<br><canvas class="' + icon + '" width="50" height="50"></canvas>');
+                
 
                               
     //Find city function
     function getCity(lat, long) {
         $.ajax({
-            url: 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + lat + ',' + long + '&key=AIzaSyDJZCiJdKG3377QE2rRuuQ2jzSDV6kmeYs'
+            url: 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + lat + ',' + long + '&key=AIzaSyCGy3rc_Rpqox7dScKxIIH7U-I18JoPgbc'
             , dataType: 'json'
             , success: function (json) {
                 console.log(json);
