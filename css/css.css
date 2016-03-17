@@ -1,6 +1,5 @@
 body{
-    background-color: blue;
-    background-size: cover;
+    background: blue, center top no-repeat;
 }
 
 * {
