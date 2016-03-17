@@ -1,3 +1,10 @@
+
+html{
+
+    background: blue;
+    background-size: cover;
+}
+
 * {
     margin: 0 auto;
     padding: 0;
@@ -6,18 +13,23 @@
     list-style-type: none;
     text-decoration: none;
     font-size: 18px;
-    background: url('winter_city.jpg');
+
 }
+
 
 #info {
     width: 60%;
     margin: 20px auto;
     text-align: center;
-
+    
 }
 
 #location, #temp {
     font-size: 2em;
+
+
+   
+
 }
 
 #wind {
