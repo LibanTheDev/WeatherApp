@@ -56,6 +56,7 @@ $(document).ready(function() {
                         var forecastIcon = forecast.icon;
                         var forecastDescription = forecast.summary;
 
+                        //HTML to append to document
                         var html =
                             '<div class="forecast-list"><ul class="list">' +
                             '<li class="item" id="day">' + forecastDay + '</li>' +
@@ -75,7 +76,7 @@ $(document).ready(function() {
                             '<li>' + forecastDescription + '</li>' +
                             '</ul></div></div><br><br>';
 
-                        //Append HTML to document
+                                 //Append HTML to document
                         $('.forecast').append(html);
                     } //End if statement
                 }); //End .each()
@@ -198,6 +199,4 @@ $(document).ready(function() {
 
     } //End checkGeoLocation
     checkGeoLocation();
-    //---------------------------------------------------
-    //---------------------------------------------------
                         });
