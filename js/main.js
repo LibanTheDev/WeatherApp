@@ -4,6 +4,13 @@
 $(document).ready(function() {
 
 
+
+
+
+
+ 
+
+
  function getWeatherData(lat, long) {
         $.ajax({
             url: 'https://api.forecast.io/forecast/8403785038c4e5e3875efb76777aca8c/' + lat + ',' + long
@@ -22,9 +29,10 @@ $(document).ready(function() {
                 $('#condition').append(description +
                     '<br><canvas class="' + icon + '" width="50" height="50"></canvas>');
 
-
+}
 
                 //Only display wind data if wind speed is greater than 1mph
+}
                
 }
                 
@@ -41,6 +49,7 @@ $(document).ready(function() {
 
         }); //End .ajax()
     } //End getWeatherData()
+
     //---------------------------------------------------
     //---------------------------------------------------
 

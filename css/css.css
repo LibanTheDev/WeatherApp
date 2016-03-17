@@ -1,11 +1,16 @@
-body{
+
+html{
     background: blue, center top no-repeat;
+}
+body{
+    background: blue;
+    background-size: cover;
 }
 
 * {
     margin: 0 auto;
     padding: 0;
-    background: #F8F8F8;
+    background: blue;
     color: #222222;
     list-style-type: none;
     text-decoration: none;
@@ -18,15 +23,14 @@ body{
     width: 60%;
     margin: 20px auto;
     text-align: center;
-    background-color: blue;
-    background-size: cover;
+    background: blue, center top no-repeat;
+    
     
 }
 
 #location, #temp {
     font-size: 2em;
-    background-color: blue;
-    background-size: cover;
+   background: blue, center top no-repeat;
 
    
 
