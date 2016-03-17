@@ -26,7 +26,7 @@ $(document).ready(function() {
             , dataType: 'json'
             , success: function (json) {
                 console.log(json);
-                var city = json.results[0].address_components[2].long_name;
+                var city = json.results[0].address_components[3].long_name;
                 
                 var locationHTML = '<h1>' + city + '</h1>';
                 $('#location').append(locationHTML);
