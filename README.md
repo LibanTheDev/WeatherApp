@@ -1,2 +1,3 @@
 # WeatherApp
-Weather App using Forecast.io API
+Weather App using OpenWeatherMap API, jQuery, HTML, and CSS
+
