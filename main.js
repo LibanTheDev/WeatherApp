@@ -124,7 +124,7 @@ function loadBG(data){
       default:
         break;
     }
-    if (weatherid === 800) {
+    if (weatherid === 800) {nn
       image = background["sunny"];
     }
     if (weatherid >= 801 && weatherid <= 805) {
