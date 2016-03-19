@@ -1,0 +1,40 @@
+
+
+body {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.title {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.jumbotron {
+  background: rgb(25, 25, 50); /* This is for ie8 and below */
+  background: rgba(25, 25, 50, 0.6); 
+  border-radius: 10px;
+  color: white;
+}
+
+.dummy {
+    margin-top: 100%;
+  
+}
+.thumbnail {
+    background: rgb(25, 25, 50);
+    background: rgba(25, 25, 50, 0.8); 
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    text-align:center;
+    padding-top:calc(50% - 40px);
+    color: white;
+    font-family: Ubuntu;
+    font-size: 200%!important;
+}
